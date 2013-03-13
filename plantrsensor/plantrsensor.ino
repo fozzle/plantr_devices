@@ -1,9 +1,14 @@
+/* This is for reading values
+from moisture and light sensor, and
+transmitting via Xbee to the PC-connected base
+*/
+
 int lightPin = 0;
 int sensorValue = 0;
 int moisturePin = 1;
 int powerPin = 2;
 int moistureValue;
-String id = String("yN8a1-HDe0g");
+String id = String("SeVPHfSsZBo");
 
 void setup() {
   pinMode(powerPin, OUTPUT);

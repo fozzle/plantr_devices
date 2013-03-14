@@ -21,4 +21,4 @@ while (True):
     print str(values)
     r = requests.post(url, data=values) 
     print "Sleeping now!"
-    time.sleep(900)
+    time.sleep(30)

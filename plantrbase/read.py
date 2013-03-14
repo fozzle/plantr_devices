@@ -6,7 +6,7 @@ import json
 import re
 
 url = "http://plantr.herokuapp.com/logs"
-extract_regex = re.compile(r"i([\w\-]{11})l(\d{3,4})m(\d{3,4})")
+extract_regex = re.compile(r"i([\w\-]{11})l(\d{3})m(\d{3})")
 
 while (True):
   print "Awake!"

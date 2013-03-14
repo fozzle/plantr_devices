@@ -14,10 +14,11 @@ while (True):
 
   line = extract_regex.match(ser.readline())
   if line:
-    values = {'log[plant_id]': line.group(0),
-            'log[sunlight]': line.group(1),
-            'log[moisture]': line.group(2),
+    values = {'sensor_id': line.group(1),
+            'log[sunlight]': line.group(2),
+            'log[moisture]': line.group(3),
             'log[temperature]': random.randint(30, 70)}
+    print str(values)
     r = requests.post(url, data=values) 
     print "Sleeping now!"
     time.sleep(60)

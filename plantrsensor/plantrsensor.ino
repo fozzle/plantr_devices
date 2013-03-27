@@ -26,5 +26,5 @@ void loop() {
   String moisture = String(int(moistureValue));
   
   Serial.println(String("i"+id+"l"+light+"m"+moisture));
-  delay(2000);
+  delay(600000);
 }

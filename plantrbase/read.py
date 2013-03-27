@@ -19,6 +19,4 @@ while (True):
             'log[moisture]': line.group(3),
             'log[temperature]': random.randint(30, 70)}
     print str(values)
-    r = requests.post(url, data=values) 
-    print "Sleeping now!"
-    time.sleep(5)
+    r = requests.post(url, data=values)

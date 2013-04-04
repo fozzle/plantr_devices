@@ -18,5 +18,6 @@ void loop() {
     int stat = Serial.readBytesUntil('\n', msg, sizeof(msg));
     String output = String(msg);
     Serial.println(output);
+    Serial.flush();
   }
 }
